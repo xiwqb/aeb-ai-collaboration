@@ -54,11 +54,22 @@ data/cases/              六组完整采样记录及原生通道
 data/reproduction/       CCRs简化复现记录
 data/model_configuration.json 当前参数与信号约定
 results/                 指标汇总、曲线及原始核验报告
+skills/                  从本项目提炼的简易协作与核验skill
 ```
 
 仓库保留100001个采样点的六组Simulink输出和相关原生通道；基线与重复组另提供全部690个通道的无损分块档案，以便复核687个非计时通道完全相同的结论。`data/provenance.json`保存原始CSV哈希；压缩仅改变存储形式，不做下采样或数值修饰。
 
 CarSim求解器、安装文件、商用车辆参数表和期刊PDF不包含在本仓库。重新运行联合仿真需要自行准备相应软件、数据库和本地路径；仅复核公开数值记录不需要这些软件。
+
+## 简易 skill
+
+项目的可复用经验已整理为[aeb-simulation-collaboration](skills/aeb-simulation-collaboration/SKILL.md)。它围绕“任务可验收—接口与参数确实生效—实验能区分解释—结果有证据支持”组织AEB联合仿真，适合后续项目搭建、异常排查或已有数据复核。
+
+skill目录只有主说明和一份按需读取的案例参考，可以整体复制给支持`SKILL.md`的AI工具使用。模型、数据和复核脚本仍在本仓库原位置；新的工况需要重新确认单位、阈值与验收条件。
+
+例如，在已有仓库的工作目录中提出：
+
+> 参考skills/aeb-simulation-collaboration/SKILL.md，检查当前AEB模型是否满足单次停车目标。先核对实际生效的参数和单位，再针对异常选择对照实验，交付可重算的指标和结论边界。
 
 ## 论文引用
 

@@ -291,8 +291,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 4038,
-    "sha256": "f646e5d36ca9412d628fda16518949c4cff781c0010734bfec489d20984c5ea2"
+    "bytes": 4979,
+    "sha256": "f9aee14011c6de62b99776f401fe96e72d1d268a7a0388895d7c715ae6a4b773"
   },
   {
     "path": "requirements.txt",
@@ -373,5 +373,15 @@
     "path": "scripts/verify_evidence.py",
     "bytes": 3986,
     "sha256": "bc2a11d4fbfc32c109e5122f8e027265bf869eeb3a6053bfe47f21709eddede4"
+  },
+  {
+    "path": "skills/aeb-simulation-collaboration/references/project-case.md",
+    "bytes": 3562,
+    "sha256": "6b2f970b0ad6175b4d56f95d854d9cfbae5f6e23b8dbffb8369b28e0bd754ae8"
+  },
+  {
+    "path": "skills/aeb-simulation-collaboration/SKILL.md",
+    "bytes": 3776,
+    "sha256": "c5916b9530bd54b40c1b87ac7d9565c9c26991b6bc14c7e6f50f2ba270cec963"
   }
 ]

@@ -1,0 +1,52 @@
+{
+  "vehicle": "BMW X3 xDrive 25i parameter configuration",
+  "base_template": "C-Class Hatchback",
+  "sprung_mass_kg": 1674,
+  "complete_vehicle_calibration": false,
+  "road_mu": 0.85,
+  "obstacle_coordinate_m": 50,
+  "reserve_distance_m": 2,
+  "gap_definition": "50-Xo (coordinate gap, not bumper clearance)",
+  "stop_time_s": 10,
+  "native_dt_s": 0.0001,
+  "simulink_solver": "ode45",
+  "max_step_s": 0.01,
+  "control": {
+    "trigger_on_mps2": 5,
+    "hold_off_mps2": -1,
+    "release_control_off_mps2": 4.9,
+    "demand_mps2": 9,
+    "pressure_gain_MPa_per_mps2": 1.4,
+    "pressure_cap_MPa": 14,
+    "hydraulic_time_constant_s": 0.05,
+    "stop_threshold_kmh": 0.5
+  },
+  "imports": [
+    {
+      "name": "IMP_PCON_BK",
+      "mode": "Replace",
+      "unit": "MPa"
+    },
+    {
+      "name": "IMP_THROTTLE_ENGINE",
+      "mode": "Add"
+    }
+  ],
+  "exports": [
+    "Vx",
+    "Ax",
+    "Xo",
+    "Yo",
+    "Yaw",
+    "AVz"
+  ],
+  "simulink_csv_columns": [
+    "time_s",
+    "Vx_kmh",
+    "Ax_g",
+    "Xo_m",
+    "gap_m",
+    "a_req_mps2",
+    "pressure_MPa"
+  ]
+}

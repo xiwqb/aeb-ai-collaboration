@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "id": "hold_50",
+      "min_gap_m": 6.728096008300781,
+      "stop_time_s": 4.0825000000000005,
+      "trigger_time_s": 2.0712,
+      "relay_switch_count": 1,
+      "peak_pressure_MPa": 12.600000381469727,
+      "final_v_kmh": 0.026292888447642326,
+      "displacement_m": 43.270503997802734,
+      "integral_position_error_m": 0.0004979378722538286,
+      "aligned_residuals": {
+        "Vx": 1.9071646448765023e-06,
+        "Xo": 1.907343488483093e-06,
+        "Ax_aligned": 2.980144087061376e-08,
+        "pressure_aligned": 4.7677538006496434e-07
+      }
+    },
+    {
+      "id": "release_50",
+      "min_gap_m": 1.7258110046386719,
+      "stop_time_s": 4.9554,
+      "trigger_time_s": 2.0712,
+      "relay_switch_count": 12,
+      "peak_pressure_MPa": 12.600000381469727,
+      "final_v_kmh": 0.006161207798868418,
+      "displacement_m": 48.271907806396484,
+      "integral_position_error_m": 0.00030877014901875555,
+      "aligned_residuals": {
+        "Vx": 1.9071646448765023e-06,
+        "Xo": 1.90727465820828e-06,
+        "Ax_aligned": 2.9800223400044956e-08,
+        "pressure_aligned": 4.768132768617761e-07
+      }
+    },
+    {
+      "id": "hold_45",
+      "min_gap_m": 5.7489471435546875,
+      "stop_time_s": 4.408,
+      "trigger_time_s": 2.5927,
+      "relay_switch_count": 1,
+      "peak_pressure_MPa": 12.600000381469727,
+      "final_v_kmh": -0.02804858237504959,
+      "displacement_m": 44.24967956542969,
+      "integral_position_error_m": 0.0005287021025637273,
+      "aligned_residuals": {
+        "Vx": 1.9072493273597502e-06,
+        "Xo": 1.9073300592253872e-06,
+        "Ax_aligned": 2.980209723446592e-08,
+        "pressure_aligned": 4.7677538006496434e-07
+      }
+    },
+    {
+      "id": "hold_55",
+      "min_gap_m": 7.823070526123047,
+      "stop_time_s": 3.8244000000000002,
+      "trigger_time_s": 1.6185,
+      "relay_switch_count": 1,
+      "peak_pressure_MPa": 12.600000381469727,
+      "final_v_kmh": -0.03538137674331665,
+      "displacement_m": 42.17583084106445,
+      "integral_position_error_m": 0.00046302643738016513,
+      "aligned_residuals": {
+        "Vx": 1.907305893666944e-06,
+        "Xo": 1.9073272596870083e-06,
+        "Ax_aligned": 2.9799388068241228e-08,
+        "pressure_aligned": 4.7677538006496434e-07
+      }
+    },
+    {
+      "id": "brake_zero_50",
+      "min_gap_m": -82.29292297363281,
+      "stop_time_s": null,
+      "trigger_time_s": 2.0712,
+      "relay_switch_count": 1,
+      "peak_pressure_MPa": 0.0,
+      "final_v_kmh": 44.11846160888672,
+      "displacement_m": 132.2929229736328,
+      "integral_position_error_m": 0.0002569690280438408,
+      "aligned_residuals": {
+        "Vx": 1.9073286807724799e-06,
+        "Xo": 7.628682055837999e-06,
+        "Ax_aligned": 9.313215164341582e-10,
+        "pressure_aligned": 0.0
+      }
+    },
+    {
+      "id": "hold_50_repeat",
+      "min_gap_m": 6.728096008300781,
+      "stop_time_s": 4.0825000000000005,
+      "trigger_time_s": 2.0712,
+      "relay_switch_count": 1,
+      "peak_pressure_MPa": 12.600000381469727,
+      "final_v_kmh": 0.026292888447642326,
+      "displacement_m": 43.270503997802734,
+      "integral_position_error_m": 0.0004979378722538286,
+      "aligned_residuals": {
+        "Vx": 1.9071646448765023e-06,
+        "Xo": 1.907343488483093e-06,
+        "Ax_aligned": 2.980144087061376e-08,
+        "pressure_aligned": 4.7677538006496434e-07
+      }
+    }
+  ],
+  "repeatability": {
+    "exactly_equal_native_channels": 687,
+    "different_channels": [
+      "T_Real_Elapsed",
+      "T_Real_Last",
+      "T_Real_Step"
+    ],
+    "all_simulink_columns_exactly_equal": true
+  },
+  "limits": [
+    "Single parameterized X3 configuration; generic subsystems retained.",
+    "Table extrapolation warnings retained, no physical validation claimed.",
+    "Gap is controller coordinate 50-Xo, not body-envelope clearance.",
+    "Release control uses OffSwitchValue=4.9, not the original TTC controller.",
+    "Zero brake gain preserves throttle-cut logic; it is not a whole-controller-off comparison.",
+    "Exact repeat is deterministic numerical reproducibility, not statistical replication."
+  ]
+}

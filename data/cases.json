@@ -1,0 +1,44 @@
+[
+  {
+    "id": "hold_50",
+    "speed_kmh": 50,
+    "off_threshold": -1,
+    "kp": 1.4,
+    "role": "baseline"
+  },
+  {
+    "id": "release_50",
+    "speed_kmh": 50,
+    "off_threshold": 4.9,
+    "kp": 1.4,
+    "role": "narrow_hysteresis_control"
+  },
+  {
+    "id": "hold_45",
+    "speed_kmh": 45,
+    "off_threshold": -1,
+    "kp": 1.4,
+    "role": "speed_perturbation"
+  },
+  {
+    "id": "hold_55",
+    "speed_kmh": 55,
+    "off_threshold": -1,
+    "kp": 1.4,
+    "role": "speed_perturbation"
+  },
+  {
+    "id": "brake_zero_50",
+    "speed_kmh": 50,
+    "off_threshold": -1,
+    "kp": 0,
+    "role": "forward_path_negative_control"
+  },
+  {
+    "id": "hold_50_repeat",
+    "speed_kmh": 50,
+    "off_threshold": -1,
+    "kp": 1.4,
+    "role": "deterministic_repeat"
+  }
+]

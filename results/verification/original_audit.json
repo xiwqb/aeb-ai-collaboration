@@ -1,0 +1,603 @@
+{
+  "status": "VERIFIED_SIMULATION",
+  "cases": [
+    {
+      "id": "hold_50",
+      "native": {
+        "initial_v_kmh": 50.0,
+        "final_v_kmh": 0.026292888447642326,
+        "min_gap_m": 6.728096008300781,
+        "stop_time_s": 4.0825000000000005,
+        "trigger_time_s": 2.0712,
+        "trigger_gap_m": 21.273426055908203,
+        "predicted_trigger_time_s": 2.067111111111111,
+        "trigger_prediction_error_s": 0.004088888888889031,
+        "braking_duration_s": 2.0113000000000003,
+        "relay_switch_count": 1,
+        "peak_pressure_MPa": 12.600000381469727,
+        "peak_decel_g": 0.7660361528396606,
+        "displacement_m": 43.270503997802734,
+        "speed_integral_m": 43.27100193567499,
+        "after6_abs_v_max_kmh": 0.07395406812429428,
+        "integral_position_error_m": 0.0004979378722538286
+      },
+      "matlab_metrics": {
+        "id": "hold_50",
+        "status": "completed",
+        "initial_v_kmh": 49.99999999999999,
+        "final_v_kmh": 0.02629288893594149,
+        "min_gap_m": 6.7280971757878945,
+        "stop_time_s": 4.0825000000000005,
+        "trigger_time_s": 2.0712,
+        "final_x_m": 43.27050300401776,
+        "peak_pressure_MPa": 12.599999999999445,
+        "peak_decel_g": 0.7660361701639247,
+        "relay_switch_count": 1,
+        "pressure_crossings_1MPa": 1,
+        "late_v_abs_max_kmh": 0.07395406467578287,
+        "speed_integral_m": 43.271001935957585,
+        "sample_count": 100001
+      },
+      "units": {
+        "Vx": "km/h",
+        "Ax": "g",
+        "Xo": "m",
+        "Pbk_Con": "MPa"
+      },
+      "n_samples": 100001,
+      "header_bytes": 24,
+      "max_native_simulink_error": {
+        "Vx": 1.9071646448765023e-06,
+        "Ax": 0.007115544237078386,
+        "Xo": 1.907343488483093e-06,
+        "Pbk_Con": 0.0251748167915447
+      },
+      "max_aligned_native_simulink_error": {
+        "Vx": 1.9071646448765023e-06,
+        "Xo": 1.907343488483093e-06,
+        "Ax": 2.980144087061376e-08,
+        "Pbk_Con": 4.7677538006496434e-07
+      },
+      "observed_sample_relations": {
+        "Vx": "native[k] = simulink[k]",
+        "Xo": "native[k] = simulink[k]",
+        "Ax": "native[k] = simulink[k+1]",
+        "Pbk_Con": "native[k+1] = simulink[k]"
+      },
+      "sprung_mass_kg": 1674.0,
+      "extrapolation_warnings": [
+        "Function L_RELAX_X_FZ_TABLE(1,1) extrapolated (out of range HIGH) for X = 1.01267 N at T = 0",
+        "Function L_RELAX_X_FZ_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.01267 N at T = 0",
+        "Function L_RELAX_X_FZ_TABLE(2,1) extrapolated (out of range HIGH) for X = 1.00854 N at T = 0",
+        "Function L_RELAX_X_FZ_TABLE(2,2) extrapolated (out of range HIGH) for X = 1.00854 N at T = 0",
+        "Function FS_EXT_TABLE(2,1) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function FS_COMP_TABLE(2,1) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function FS_EXT_TABLE(2,2) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function FS_COMP_TABLE(2,2) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = -2.79292e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = -2.79292e-14 mm at T = 0",
+        "Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = -2.79292e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = -2.79292e-14 mm at T = 0",
+        "Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = 2.77556e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = 2.77556e-14 mm at T = 0",
+        "Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = 2.77556e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = 2.77556e-14 mm at T = 0",
+        "Function PBK_DL_TABLE(2,1) extrapolated (out of range HIGH) for X = 2.50847 MPa at T = 2.0824",
+        "Function PBK_DL_TABLE(2,2) extrapolated (out of range HIGH) for X = 2.50847 MPa at T = 2.0824",
+        "Function FY_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 26.2254 deg at T = 4.0381",
+        "Function MZ_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 26.2254 deg at T = 4.0381",
+        "Function FY_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.2254 deg at T = 4.0381",
+        "Function MZ_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.2254 deg at T = 4.0381"
+      ],
+      "file_sha256": {
+        "Run_all.par": "e0ddd44a2a63ec10bb800110a60950c30c9c4b88e7fc26c6baf412b81b3e7805",
+        "simfile.sim": "0665defe663869be0e19bbca8cdaf8fc896e450440c739888f7e9e9f10346e0d",
+        "AEB_Verify.slx": "e43b24d253e93dfe1bb16b8f05e50aa89087a56d2fa0720e5e49e071139a6029",
+        "raw_simulink.mat": "b9fada72ef2c03f8500e0e0c56c1c208304fbcc90d7b673fb365dac6c23485d7"
+      }
+    },
+    {
+      "id": "release_50",
+      "native": {
+        "initial_v_kmh": 50.0,
+        "final_v_kmh": 0.006161207798868418,
+        "min_gap_m": 1.7258110046386719,
+        "stop_time_s": 4.9554,
+        "trigger_time_s": 2.0712,
+        "trigger_gap_m": 21.273426055908203,
+        "predicted_trigger_time_s": 2.067111111111111,
+        "trigger_prediction_error_s": 0.004088888888889031,
+        "braking_duration_s": 2.8842,
+        "relay_switch_count": 12,
+        "peak_pressure_MPa": 12.600000381469727,
+        "peak_decel_g": 0.7535700798034668,
+        "displacement_m": 48.271907806396484,
+        "speed_integral_m": 48.2722165765455,
+        "after6_abs_v_max_kmh": 0.10129530727863312,
+        "integral_position_error_m": 0.00030877014901875555
+      },
+      "matlab_metrics": {
+        "id": "release_50",
+        "status": "completed",
+        "initial_v_kmh": 49.99999999999999,
+        "final_v_kmh": 0.006161207580269966,
+        "min_gap_m": 1.7258109802668997,
+        "stop_time_s": 4.9554,
+        "trigger_time_s": 2.0712,
+        "final_x_m": 48.271906006452355,
+        "peak_pressure_MPa": 12.599999999999445,
+        "peak_decel_g": 0.7535700926248392,
+        "relay_switch_count": 12,
+        "pressure_crossings_1MPa": 13,
+        "late_v_abs_max_kmh": 0.10129530787778851,
+        "speed_integral_m": 48.27221656978833,
+        "sample_count": 100001
+      },
+      "units": {
+        "Vx": "km/h",
+        "Ax": "g",
+        "Xo": "m",
+        "Pbk_Con": "MPa"
+      },
+      "n_samples": 100001,
+      "header_bytes": 24,
+      "max_native_simulink_error": {
+        "Vx": 1.9071646448765023e-06,
+        "Ax": 0.006741439844541008,
+        "Xo": 1.90727465820828e-06,
+        "Pbk_Con": 0.0251748167915447
+      },
+      "max_aligned_native_simulink_error": {
+        "Vx": 1.9071646448765023e-06,
+        "Xo": 1.90727465820828e-06,
+        "Ax": 2.9800223400044956e-08,
+        "Pbk_Con": 4.768132768617761e-07
+      },
+      "observed_sample_relations": {
+        "Vx": "native[k] = simulink[k]",
+        "Xo": "native[k] = simulink[k]",
+        "Ax": "native[k] = simulink[k+1]",
+        "Pbk_Con": "native[k+1] = simulink[k]"
+      },
+      "sprung_mass_kg": 1674.0,
+      "extrapolation_warnings": [
+        "Function L_RELAX_X_FZ_TABLE(1,1) extrapolated (out of range HIGH) for X = 1.01267 N at T = 0",
+        "Function L_RELAX_X_FZ_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.01267 N at T = 0",
+        "Function L_RELAX_X_FZ_TABLE(2,1) extrapolated (out of range HIGH) for X = 1.00854 N at T = 0",
+        "Function L_RELAX_X_FZ_TABLE(2,2) extrapolated (out of range HIGH) for X = 1.00854 N at T = 0",
+        "Function FS_EXT_TABLE(2,1) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function FS_COMP_TABLE(2,1) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function FS_EXT_TABLE(2,2) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function FS_COMP_TABLE(2,2) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = -2.79292e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = -2.79292e-14 mm at T = 0",
+        "Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = -2.79292e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = -2.79292e-14 mm at T = 0",
+        "Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = 2.77556e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = 2.77556e-14 mm at T = 0",
+        "Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = 2.77556e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = 2.77556e-14 mm at T = 0",
+        "Function PBK_DL_TABLE(2,1) extrapolated (out of range HIGH) for X = 2.50847 MPa at T = 2.0824",
+        "Function PBK_DL_TABLE(2,2) extrapolated (out of range HIGH) for X = 2.50847 MPa at T = 2.0824",
+        "Function FY_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 26.0443 deg at T = 4.9288",
+        "Function MZ_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 26.0443 deg at T = 4.9288",
+        "Function FY_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.0443 deg at T = 4.9288",
+        "Function MZ_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.0443 deg at T = 4.9288"
+      ],
+      "file_sha256": {
+        "Run_all.par": "e0ddd44a2a63ec10bb800110a60950c30c9c4b88e7fc26c6baf412b81b3e7805",
+        "simfile.sim": "c93e203799fbebdfa9ed4b0f975cf1f11d778f855e7d983ef7333969d9965c84",
+        "AEB_Verify.slx": "d51435b379104e2c8171d9faf0d5fe6ec4f1916d3fdb11a1592bacf49e36d93e",
+        "raw_simulink.mat": "9c2510c2340300b3bd69cb8ca18bf39e1da1e7cb4929dae0975f6c93bd03f7c1"
+      }
+    },
+    {
+      "id": "hold_45",
+      "native": {
+        "initial_v_kmh": 45.0,
+        "final_v_kmh": -0.02804858237504959,
+        "min_gap_m": 5.7489471435546875,
+        "stop_time_s": 4.408,
+        "trigger_time_s": 2.5927,
+        "trigger_gap_m": 17.621994018554688,
+        "predicted_trigger_time_s": 2.59,
+        "trigger_prediction_error_s": 0.0026999999999999247,
+        "braking_duration_s": 1.8153000000000006,
+        "relay_switch_count": 1,
+        "peak_pressure_MPa": 12.600000381469727,
+        "peak_decel_g": 0.7646235823631287,
+        "displacement_m": 44.24967956542969,
+        "speed_integral_m": 44.25020826753225,
+        "after6_abs_v_max_kmh": 0.08088980615139008,
+        "integral_position_error_m": 0.0005287021025637273
+      },
+      "matlab_metrics": {
+        "id": "hold_45",
+        "status": "completed",
+        "initial_v_kmh": 44.99999999999999,
+        "final_v_kmh": -0.028048581840294927,
+        "min_gap_m": 5.748948724537591,
+        "stop_time_s": 4.408,
+        "trigger_time_s": 2.5927000000000002,
+        "final_x_m": 44.24968144944763,
+        "peak_pressure_MPa": 12.599999999999445,
+        "peak_decel_g": 0.7646236012892259,
+        "relay_switch_count": 1,
+        "pressure_crossings_1MPa": 1,
+        "late_v_abs_max_kmh": 0.08088980841218814,
+        "speed_integral_m": 44.250208272130315,
+        "sample_count": 100001
+      },
+      "units": {
+        "Vx": "km/h",
+        "Ax": "g",
+        "Xo": "m",
+        "Pbk_Con": "MPa"
+      },
+      "n_samples": 100001,
+      "header_bytes": 24,
+      "max_native_simulink_error": {
+        "Vx": 1.9072493273597502e-06,
+        "Ax": 0.0071009272186876304,
+        "Xo": 1.9073300592253872e-06,
+        "Pbk_Con": 0.0251748167915447
+      },
+      "max_aligned_native_simulink_error": {
+        "Vx": 1.9072493273597502e-06,
+        "Xo": 1.9073300592253872e-06,
+        "Ax": 2.980209723446592e-08,
+        "Pbk_Con": 4.7677538006496434e-07
+      },
+      "observed_sample_relations": {
+        "Vx": "native[k] = simulink[k]",
+        "Xo": "native[k] = simulink[k]",
+        "Ax": "native[k] = simulink[k+1]",
+        "Pbk_Con": "native[k+1] = simulink[k]"
+      },
+      "sprung_mass_kg": 1674.0,
+      "extrapolation_warnings": [
+        "Function L_RELAX_X_FZ_TABLE(1,1) extrapolated (out of range HIGH) for X = 1.01267 N at T = 0",
+        "Function L_RELAX_X_FZ_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.01267 N at T = 0",
+        "Function L_RELAX_X_FZ_TABLE(2,1) extrapolated (out of range HIGH) for X = 1.00854 N at T = 0",
+        "Function L_RELAX_X_FZ_TABLE(2,2) extrapolated (out of range HIGH) for X = 1.00854 N at T = 0",
+        "Function FS_EXT_TABLE(2,1) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function FS_COMP_TABLE(2,1) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function FS_EXT_TABLE(2,2) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function FS_COMP_TABLE(2,2) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = -2.79292e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = -2.79292e-14 mm at T = 0",
+        "Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = -2.79292e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = -2.79292e-14 mm at T = 0",
+        "Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = 2.77556e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = 2.77556e-14 mm at T = 0",
+        "Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = 2.77556e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = 2.77556e-14 mm at T = 0",
+        "Function PBK_DL_TABLE(2,1) extrapolated (out of range HIGH) for X = 2.50847 MPa at T = 2.6039",
+        "Function PBK_DL_TABLE(2,2) extrapolated (out of range HIGH) for X = 2.50847 MPa at T = 2.6039",
+        "Function FY_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 26.1064 deg at T = 4.372",
+        "Function MZ_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 26.1064 deg at T = 4.372",
+        "Function FY_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.1064 deg at T = 4.372",
+        "Function MZ_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.1064 deg at T = 4.372"
+      ],
+      "file_sha256": {
+        "Run_all.par": "0fc27c5116b85510ea762c5e98d8958782b18b05d6adf7770bcaed9b4101d683",
+        "simfile.sim": "8f214b1b702b96dcf4f8868603a71a1d91360d770a62bad115a839fe190ac980",
+        "AEB_Verify.slx": "90ef78138b0f45b8de1c004172860a68068538115aba497500c0cb7278712cbe",
+        "raw_simulink.mat": "3e9c82483c59c077a0106e3cc95ced959d6bd9997f985bbbaa6d9ab3757f7539"
+      }
+    },
+    {
+      "id": "hold_55",
+      "native": {
+        "initial_v_kmh": 55.0,
+        "final_v_kmh": -0.03538137674331665,
+        "min_gap_m": 7.823070526123047,
+        "stop_time_s": 3.8244000000000002,
+        "trigger_time_s": 1.6185,
+        "trigger_gap_m": 25.310914993286133,
+        "predicted_trigger_time_s": 1.6140404040404046,
+        "trigger_prediction_error_s": 0.0044595959595954415,
+        "braking_duration_s": 2.2059,
+        "relay_switch_count": 1,
+        "peak_pressure_MPa": 12.600000381469727,
+        "peak_decel_g": 0.7665823698043823,
+        "displacement_m": 42.17583084106445,
+        "speed_integral_m": 42.17629386750183,
+        "after6_abs_v_max_kmh": 0.06801575422286987,
+        "integral_position_error_m": 0.00046302643738016513
+      },
+      "matlab_metrics": {
+        "id": "hold_55",
+        "status": "completed",
+        "initial_v_kmh": 55.00000000000001,
+        "final_v_kmh": -0.03538137569617868,
+        "min_gap_m": 7.823071385945944,
+        "stop_time_s": 3.8244000000000002,
+        "trigger_time_s": 1.6185,
+        "final_x_m": 42.175829953603056,
+        "peak_pressure_MPa": 12.599999999999445,
+        "peak_decel_g": 0.7665823879161361,
+        "relay_switch_count": 1,
+        "pressure_crossings_1MPa": 1,
+        "late_v_abs_max_kmh": 0.06801575058722031,
+        "speed_integral_m": 42.17629386611176,
+        "sample_count": 100001
+      },
+      "units": {
+        "Vx": "km/h",
+        "Ax": "g",
+        "Xo": "m",
+        "Pbk_Con": "MPa"
+      },
+      "n_samples": 100001,
+      "header_bytes": 24,
+      "max_native_simulink_error": {
+        "Vx": 1.907305893666944e-06,
+        "Ax": 0.007043021885858536,
+        "Xo": 1.9073272596870083e-06,
+        "Pbk_Con": 0.0251748167916006
+      },
+      "max_aligned_native_simulink_error": {
+        "Vx": 1.907305893666944e-06,
+        "Xo": 1.9073272596870083e-06,
+        "Ax": 2.9799388068241228e-08,
+        "Pbk_Con": 4.7677538006496434e-07
+      },
+      "observed_sample_relations": {
+        "Vx": "native[k] = simulink[k]",
+        "Xo": "native[k] = simulink[k]",
+        "Ax": "native[k] = simulink[k+1]",
+        "Pbk_Con": "native[k+1] = simulink[k]"
+      },
+      "sprung_mass_kg": 1674.0,
+      "extrapolation_warnings": [
+        "Function L_RELAX_X_FZ_TABLE(1,1) extrapolated (out of range HIGH) for X = 1.01267 N at T = 0",
+        "Function L_RELAX_X_FZ_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.01267 N at T = 0",
+        "Function L_RELAX_X_FZ_TABLE(2,1) extrapolated (out of range HIGH) for X = 1.00854 N at T = 0",
+        "Function L_RELAX_X_FZ_TABLE(2,2) extrapolated (out of range HIGH) for X = 1.00854 N at T = 0",
+        "Function FS_EXT_TABLE(2,1) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function FS_COMP_TABLE(2,1) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function FS_EXT_TABLE(2,2) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function FS_COMP_TABLE(2,2) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = -2.79292e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = -2.79292e-14 mm at T = 0",
+        "Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = -2.79292e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = -2.79292e-14 mm at T = 0",
+        "Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = 2.77556e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = 2.77556e-14 mm at T = 0",
+        "Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = 2.77556e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = 2.77556e-14 mm at T = 0",
+        "Function PBK_DL_TABLE(2,1) extrapolated (out of range HIGH) for X = 2.50847 MPa at T = 1.6297",
+        "Function PBK_DL_TABLE(2,2) extrapolated (out of range HIGH) for X = 2.50847 MPa at T = 1.6297",
+        "Function FY_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 26.2113 deg at T = 3.7812",
+        "Function MZ_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 26.2113 deg at T = 3.7812",
+        "Function FY_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.2113 deg at T = 3.7812",
+        "Function MZ_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.2113 deg at T = 3.7812"
+      ],
+      "file_sha256": {
+        "Run_all.par": "89c81e4fc056597d3d4e46ccd80ea503ecedaa443e05bbc94fa1b5fa7cac0596",
+        "simfile.sim": "18072f77de04fc778cbe498cf2b355bbf56c87505f70cb8fc8983fb9c8fa315b",
+        "AEB_Verify.slx": "90af1b2b0f59887b109080b908e53e5b4736cdf689a8b9078d35ba8751249a67",
+        "raw_simulink.mat": "5aa2da793b29c6cbed392f2fe4012830b9bfcfb29ba9935a448500561fd9363a"
+      }
+    },
+    {
+      "id": "brake_zero_50",
+      "native": {
+        "initial_v_kmh": 50.0,
+        "final_v_kmh": 44.11846160888672,
+        "min_gap_m": -82.29292297363281,
+        "stop_time_s": null,
+        "trigger_time_s": 2.0712,
+        "trigger_gap_m": 21.273426055908203,
+        "predicted_trigger_time_s": 2.067111111111111,
+        "trigger_prediction_error_s": 0.004088888888889031,
+        "braking_duration_s": null,
+        "relay_switch_count": 1,
+        "peak_pressure_MPa": 0.0,
+        "peak_decel_g": 0.023817945271730423,
+        "displacement_m": 132.2929229736328,
+        "speed_integral_m": 132.29317994266086,
+        "after6_abs_v_max_kmh": 47.01980972290039,
+        "integral_position_error_m": 0.0002569690280438408
+      },
+      "matlab_metrics": {
+        "id": "brake_zero_50",
+        "status": "completed",
+        "initial_v_kmh": 49.99999999999999,
+        "final_v_kmh": 44.11846121739728,
+        "min_gap_m": -82.29292845139636,
+        "stop_time_s": null,
+        "trigger_time_s": 2.0712,
+        "final_x_m": 132.29292845139636,
+        "peak_pressure_MPa": 0,
+        "peak_decel_g": 0.02381794442101172,
+        "relay_switch_count": 1,
+        "pressure_crossings_1MPa": 0,
+        "late_v_abs_max_kmh": 47.01981120129509,
+        "speed_integral_m": 132.2931799319967,
+        "sample_count": 100001
+      },
+      "units": {
+        "Vx": "km/h",
+        "Ax": "g",
+        "Xo": "m",
+        "Pbk_Con": "MPa"
+      },
+      "n_samples": 100001,
+      "header_bytes": 24,
+      "max_native_simulink_error": {
+        "Vx": 1.9073286807724799e-06,
+        "Ax": 0.00012231479951846543,
+        "Xo": 7.628682055837999e-06,
+        "Pbk_Con": 0.0
+      },
+      "max_aligned_native_simulink_error": {
+        "Vx": 1.9073286807724799e-06,
+        "Xo": 7.628682055837999e-06,
+        "Ax": 9.313215164341582e-10,
+        "Pbk_Con": 0.0
+      },
+      "observed_sample_relations": {
+        "Vx": "native[k] = simulink[k]",
+        "Xo": "native[k] = simulink[k]",
+        "Ax": "native[k] = simulink[k+1]",
+        "Pbk_Con": "native[k+1] = simulink[k]"
+      },
+      "sprung_mass_kg": 1674.0,
+      "extrapolation_warnings": [
+        "Function L_RELAX_X_FZ_TABLE(1,1) extrapolated (out of range HIGH) for X = 1.01267 N at T = 0",
+        "Function L_RELAX_X_FZ_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.01267 N at T = 0",
+        "Function L_RELAX_X_FZ_TABLE(2,1) extrapolated (out of range HIGH) for X = 1.00854 N at T = 0",
+        "Function L_RELAX_X_FZ_TABLE(2,2) extrapolated (out of range HIGH) for X = 1.00854 N at T = 0",
+        "Function FS_EXT_TABLE(2,1) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function FS_COMP_TABLE(2,1) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function FS_EXT_TABLE(2,2) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function FS_COMP_TABLE(2,2) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = -2.79292e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = -2.79292e-14 mm at T = 0",
+        "Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = -2.79292e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = -2.79292e-14 mm at T = 0",
+        "Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = 2.77556e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = 2.77556e-14 mm at T = 0",
+        "Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = 2.77556e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = 2.77556e-14 mm at T = 0"
+      ],
+      "file_sha256": {
+        "Run_all.par": "e0ddd44a2a63ec10bb800110a60950c30c9c4b88e7fc26c6baf412b81b3e7805",
+        "simfile.sim": "1bb8f024033c3ddbc1c034b039b8b9b0b9c14d5853eb2ae869919980f1fd076f",
+        "AEB_Verify.slx": "89bf9a72851bf07d900d9c848d09188c7ebb43eb65cab5af25ca516a16bddc3a",
+        "raw_simulink.mat": "6c766f6c58414b73c9c1fce554842b19a290edfec70171bd9cb202df25bb5b62"
+      }
+    },
+    {
+      "id": "hold_50_repeat",
+      "native": {
+        "initial_v_kmh": 50.0,
+        "final_v_kmh": 0.026292888447642326,
+        "min_gap_m": 6.728096008300781,
+        "stop_time_s": 4.0825000000000005,
+        "trigger_time_s": 2.0712,
+        "trigger_gap_m": 21.273426055908203,
+        "predicted_trigger_time_s": 2.067111111111111,
+        "trigger_prediction_error_s": 0.004088888888889031,
+        "braking_duration_s": 2.0113000000000003,
+        "relay_switch_count": 1,
+        "peak_pressure_MPa": 12.600000381469727,
+        "peak_decel_g": 0.7660361528396606,
+        "displacement_m": 43.270503997802734,
+        "speed_integral_m": 43.27100193567499,
+        "after6_abs_v_max_kmh": 0.07395406812429428,
+        "integral_position_error_m": 0.0004979378722538286
+      },
+      "matlab_metrics": {
+        "id": "hold_50_repeat",
+        "status": "completed",
+        "initial_v_kmh": 49.99999999999999,
+        "final_v_kmh": 0.02629288893594149,
+        "min_gap_m": 6.7280971757878945,
+        "stop_time_s": 4.0825000000000005,
+        "trigger_time_s": 2.0712,
+        "final_x_m": 43.27050300401776,
+        "peak_pressure_MPa": 12.599999999999445,
+        "peak_decel_g": 0.7660361701639247,
+        "relay_switch_count": 1,
+        "pressure_crossings_1MPa": 1,
+        "late_v_abs_max_kmh": 0.07395406467578287,
+        "speed_integral_m": 43.271001935957585,
+        "sample_count": 100001
+      },
+      "units": {
+        "Vx": "km/h",
+        "Ax": "g",
+        "Xo": "m",
+        "Pbk_Con": "MPa"
+      },
+      "n_samples": 100001,
+      "header_bytes": 24,
+      "max_native_simulink_error": {
+        "Vx": 1.9071646448765023e-06,
+        "Ax": 0.007115544237078386,
+        "Xo": 1.907343488483093e-06,
+        "Pbk_Con": 0.0251748167915447
+      },
+      "max_aligned_native_simulink_error": {
+        "Vx": 1.9071646448765023e-06,
+        "Xo": 1.907343488483093e-06,
+        "Ax": 2.980144087061376e-08,
+        "Pbk_Con": 4.7677538006496434e-07
+      },
+      "observed_sample_relations": {
+        "Vx": "native[k] = simulink[k]",
+        "Xo": "native[k] = simulink[k]",
+        "Ax": "native[k] = simulink[k+1]",
+        "Pbk_Con": "native[k+1] = simulink[k]"
+      },
+      "sprung_mass_kg": 1674.0,
+      "extrapolation_warnings": [
+        "Function L_RELAX_X_FZ_TABLE(1,1) extrapolated (out of range HIGH) for X = 1.01267 N at T = 0",
+        "Function L_RELAX_X_FZ_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.01267 N at T = 0",
+        "Function L_RELAX_X_FZ_TABLE(2,1) extrapolated (out of range HIGH) for X = 1.00854 N at T = 0",
+        "Function L_RELAX_X_FZ_TABLE(2,2) extrapolated (out of range HIGH) for X = 1.00854 N at T = 0",
+        "Function FS_EXT_TABLE(2,1) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function FS_COMP_TABLE(2,1) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function FS_EXT_TABLE(2,2) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function FS_COMP_TABLE(2,2) extrapolated (out of range HIGH) for X = 68.026 mm at T = 0",
+        "Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = -2.79292e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = -2.79292e-14 mm at T = 0",
+        "Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = -2.79292e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = -2.79292e-14 mm at T = 0",
+        "Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = 2.77556e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = 2.77556e-14 mm at T = 0",
+        "Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = 2.77556e-14 mm at T = 0",
+        "Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = 2.77556e-14 mm at T = 0",
+        "Function PBK_DL_TABLE(2,1) extrapolated (out of range HIGH) for X = 2.50847 MPa at T = 2.0824",
+        "Function PBK_DL_TABLE(2,2) extrapolated (out of range HIGH) for X = 2.50847 MPa at T = 2.0824",
+        "Function FY_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 26.2254 deg at T = 4.0381",
+        "Function MZ_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 26.2254 deg at T = 4.0381",
+        "Function FY_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.2254 deg at T = 4.0381",
+        "Function MZ_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.2254 deg at T = 4.0381"
+      ],
+      "file_sha256": {
+        "Run_all.par": "e0ddd44a2a63ec10bb800110a60950c30c9c4b88e7fc26c6baf412b81b3e7805",
+        "simfile.sim": "7fb5f96cb3aac4237fec5a9fae90bd47b6d8b5a18abbcb7597d21608ded27f4d",
+        "AEB_Verify.slx": "a4e2499e276aa249162fa958589b89275f55beef439efc1520309bdda81ff5d2",
+        "raw_simulink.mat": "42052f1a945d4134d8f4fe56c21203021ba22e77b86bee6b73191851a56fa113"
+      }
+    }
+  ],
+  "repeatability": {
+    "all_690_native_channels_exactly_equal": false,
+    "max_native_abs_difference": 0.1317307949066162,
+    "exactly_equal_channel_count": 687,
+    "different_channels": [
+      {
+        "name": "T_Real_Elapsed",
+        "max_abs_difference": 0.1317307949066162
+      },
+      {
+        "name": "T_Real_Last",
+        "max_abs_difference": 0.0862944945693016
+      },
+      {
+        "name": "T_Real_Step",
+        "max_abs_difference": 0.0019809999503195286
+      }
+    ],
+    "all_non_wallclock_channels_exactly_equal": true,
+    "all_simulink_columns_exactly_equal": true
+  },
+  "original_files_unchanged": {
+    "AEB_S1.slx": true,
+    "Run_all.par": true,
+    "simfile.sim": true
+  },
+  "limits": [
+    "Single parameterized X3 configuration; generic subsystems retained.",
+    "Table extrapolation warnings retained, no physical validation claimed.",
+    "Gap is controller coordinate 50-Xo, not body-envelope clearance.",
+    "Release control uses OffSwitchValue=4.9, not the original TTC controller.",
+    "Zero brake gain preserves throttle-cut logic; it is not a whole-controller-off comparison.",
+    "Exact repeat is deterministic numerical reproducibility, not statistical replication."
+  ]
+}

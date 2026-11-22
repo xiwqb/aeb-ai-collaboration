@@ -1,0 +1,12 @@
+{
+  "trigger_time_s": 5.201000000000072,
+  "gap_last_saved_sample_m": 3.549177111269515,
+  "gap_after_last_integration_m": 3.5491779124861815,
+  "min_ttc_s": 1.6370518941477568,
+  "peak_decel_g": 0.27,
+  "reference_gap_m": 5.7,
+  "reference_trigger_s": 5.2,
+  "third_level_assumed": true,
+  "latch_added": true,
+  "full_paper_reproduced": false
+}

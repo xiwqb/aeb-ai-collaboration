@@ -1,0 +1,17 @@
+{
+  "id": "release_50",
+  "status": "completed",
+  "initial_v_kmh": 49.99999999999999,
+  "final_v_kmh": 0.006161207580269966,
+  "min_gap_m": 1.7258109802668997,
+  "stop_time_s": 4.9554,
+  "trigger_time_s": 2.0712,
+  "final_x_m": 48.271906006452355,
+  "peak_pressure_MPa": 12.599999999999445,
+  "peak_decel_g": 0.7535700926248392,
+  "relay_switch_count": 12,
+  "pressure_crossings_1MPa": 13,
+  "late_v_abs_max_kmh": 0.10129530787778851,
+  "speed_integral_m": 48.27221656978833,
+  "sample_count": 100001
+}

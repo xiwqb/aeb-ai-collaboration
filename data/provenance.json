@@ -1,0 +1,86 @@
+[
+  {
+    "original_case": "hold_50",
+    "original_file": "signals.csv",
+    "sha256": "911916cf5782dd78f81d48d17141707ba04c6ecdad2a1c845791d902f34fe299",
+    "published_file": "data/cases/hold_50/signals.csv.gz",
+    "transformation": "lossless gzip"
+  },
+  {
+    "original_case": "hold_50",
+    "original_file": "trigger.csv",
+    "sha256": "9b8e6ba49aabd5b9f4a7e951af0ca01644936bc82fb6cf49a0a9efef1acda065",
+    "published_file": "data/cases/hold_50/trigger.csv.gz",
+    "transformation": "lossless gzip"
+  },
+  {
+    "original_case": "release_50",
+    "original_file": "signals.csv",
+    "sha256": "c370af2c5f4ef11205d9a5a8be311a020aecd729cf0066ee10e684ee5d22e8f1",
+    "published_file": "data/cases/release_50/signals.csv.gz",
+    "transformation": "lossless gzip"
+  },
+  {
+    "original_case": "release_50",
+    "original_file": "trigger.csv",
+    "sha256": "e5da13674d5b99d5f64d8587ecb464d720aa96031df4609f585edb5b78c8b98c",
+    "published_file": "data/cases/release_50/trigger.csv.gz",
+    "transformation": "lossless gzip"
+  },
+  {
+    "original_case": "hold_45",
+    "original_file": "signals.csv",
+    "sha256": "ca3e2915e87b01d4fde7df45b37f9580566cf5b6a93edaeb9bfb3ea8e17eb2fe",
+    "published_file": "data/cases/hold_45/signals.csv.gz",
+    "transformation": "lossless gzip"
+  },
+  {
+    "original_case": "hold_45",
+    "original_file": "trigger.csv",
+    "sha256": "926f998291e2d49bd13cab6330f3069c6f6d0f08957d7d469212fcfdf2c76b25",
+    "published_file": "data/cases/hold_45/trigger.csv.gz",
+    "transformation": "lossless gzip"
+  },
+  {
+    "original_case": "hold_55",
+    "original_file": "signals.csv",
+    "sha256": "e31ef8ed5654f04b34408bfd9c60f380b684f9db4e88ff3ea3dab76c60ce49ad",
+    "published_file": "data/cases/hold_55/signals.csv.gz",
+    "transformation": "lossless gzip"
+  },
+  {
+    "original_case": "hold_55",
+    "original_file": "trigger.csv",
+    "sha256": "b51b3b26ba5bc87e27854cef21f3607ebdf496be3fa41365673c309237163616",
+    "published_file": "data/cases/hold_55/trigger.csv.gz",
+    "transformation": "lossless gzip"
+  },
+  {
+    "original_case": "brake_zero_50",
+    "original_file": "signals.csv",
+    "sha256": "74de1ddea992d6a2de02edb2ea713cacc70a9fa5cf3c6656dcccb83d83facdc1",
+    "published_file": "data/cases/brake_zero_50/signals.csv.gz",
+    "transformation": "lossless gzip"
+  },
+  {
+    "original_case": "brake_zero_50",
+    "original_file": "trigger.csv",
+    "sha256": "9b8e6ba49aabd5b9f4a7e951af0ca01644936bc82fb6cf49a0a9efef1acda065",
+    "published_file": "data/cases/brake_zero_50/trigger.csv.gz",
+    "transformation": "lossless gzip"
+  },
+  {
+    "original_case": "hold_50_repeat",
+    "original_file": "signals.csv",
+    "sha256": "911916cf5782dd78f81d48d17141707ba04c6ecdad2a1c845791d902f34fe299",
+    "published_file": "data/cases/hold_50_repeat/signals.csv.gz",
+    "transformation": "lossless gzip"
+  },
+  {
+    "original_case": "hold_50_repeat",
+    "original_file": "trigger.csv",
+    "sha256": "9b8e6ba49aabd5b9f4a7e951af0ca01644936bc82fb6cf49a0a9efef1acda065",
+    "published_file": "data/cases/hold_50_repeat/trigger.csv.gz",
+    "transformation": "lossless gzip"
+  }
+]

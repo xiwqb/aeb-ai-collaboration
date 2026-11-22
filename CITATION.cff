@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "引用本项目时请使用此处的作者、标题和仓库版本信息。"
+type: software
+title: "AI辅助AEB联合仿真项目过程与验证资料"
+authors:
+  - family-names: "杨"
+    given-names: "竣升"
+version: "paper-v1"
+repository-code: "https://github.com/xiwqb/aeb-ai-collaboration"
+url: "https://github.com/xiwqb/aeb-ai-collaboration/tree/paper-v1"
+abstract: "AEB课程项目的协作过程、Simulink模型、六组针对性实验及可重新计算的核验证据。"

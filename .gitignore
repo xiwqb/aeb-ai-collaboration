@@ -1,0 +1,15 @@
+__pycache__/
+.venv/
+*.pyc
+*.slxc
+slprj/
+*.vsb
+*.par
+*.sim
+*.dll
+*.exe
+*.log
+local_runs/
+.env
+*.pem
+*.key

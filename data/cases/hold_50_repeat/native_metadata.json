@@ -1,0 +1,20 @@
+{
+  "columns": [
+    "Vx",
+    "Ax",
+    "Xo",
+    "Pbk_Con"
+  ],
+  "units": [
+    "km/h",
+    "g",
+    "m",
+    "MPa"
+  ],
+  "sample_count": 100001,
+  "dt_s": 0.0001,
+  "source_channel_count": 690,
+  "binary_header_bytes": 24,
+  "source_vsb_sha256": "e30abd6103c42f1dec538a91fb2ecb4d0e0d70fdcc8c8b584fe6994181a4174a",
+  "source_vs_sha256": "ae76785e0cc3a050cb900987455aae0f4d78bf605d50ee81cd3153fc9beb30dd"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "brake_zero_50",
+  "status": "completed",
+  "initial_v_kmh": 49.99999999999999,
+  "final_v_kmh": 44.11846121739728,
+  "min_gap_m": -82.29292845139636,
+  "stop_time_s": null,
+  "trigger_time_s": 2.0712,
+  "final_x_m": 132.29292845139636,
+  "peak_pressure_MPa": 0,
+  "peak_decel_g": 0.02381794442101172,
+  "relay_switch_count": 1,
+  "pressure_crossings_1MPa": 0,
+  "late_v_abs_max_kmh": 47.01981120129509,
+  "speed_integral_m": 132.2931799319967,
+  "sample_count": 100001
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hold_50",
+  "status": "completed",
+  "initial_v_kmh": 49.99999999999999,
+  "final_v_kmh": 0.02629288893594149,
+  "min_gap_m": 6.7280971757878945,
+  "stop_time_s": 4.0825000000000005,
+  "trigger_time_s": 2.0712,
+  "final_x_m": 43.27050300401776,
+  "peak_pressure_MPa": 12.599999999999445,
+  "peak_decel_g": 0.7660361701639247,
+  "relay_switch_count": 1,
+  "pressure_crossings_1MPa": 1,
+  "late_v_abs_max_kmh": 0.07395406467578287,
+  "speed_integral_m": 43.271001935957585,
+  "sample_count": 100001
+}
